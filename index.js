@@ -143,8 +143,6 @@ function removeFlavorByName(array4, flavor){
   return array4
 }
 
-console.log(removeFlavorByName(originalFlavors, "Eggnog"))
-
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional materials highlighting all of their chocolate flavors. 
@@ -166,9 +164,18 @@ Use the filterByWord function below to do the following:
   DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
-function filterByWord(/*your code here*/){
-  /*your code here*/
+function filterByWord(array5, input1){
+  let newArray = []
+  for (let i=0; i<array5.length; i++) {
+    let fun = array5[i].includes(input1)
+    if (fun === true) {
+       newArray.push(array5[i])
+    }
+  }
+  return newArray
 }
+
+
 
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
